@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "b281231c-5dd8-4c99-8024-30f1bffb9a30",
+		"name": "Hashemi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "#1:login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "root",
+							"description": "نام کاربری کاربر یا فروشنده",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"description": "رمز عبور",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{server}}/api/account/login",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#2:device-get-settings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "شناسه دستگاه",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "123456789123456789123456789123",
+							"description": "توکن مخصوص دستگاه",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{server}}/api/device/get-settings",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"device",
+						"get-settings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "#3:device-update-settings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "شناسه دستگاه",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "123456789123456789123456789123",
+							"description": "توکن مخصوص دستگاه",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "دستگاه دوم",
+							"description": "نام دستگاه",
+							"type": "text"
+						},
+						{
+							"key": "shopper_id",
+							"value": "",
+							"description": "شناسه فروشنده دستگاه",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "access_id",
+							"value": "",
+							"description": "شناسه کاربر دستگاه",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "",
+							"description": "نمایش - عدم نمایش",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "set_point",
+							"value": "",
+							"description": "دمای تنظیمی",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "temp1",
+							"value": "",
+							"description": "دما سنسور اول",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "temp2",
+							"value": "",
+							"description": "دما سنسور دوم",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "mode",
+							"value": "",
+							"description": "مد دستگاه",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "rel1",
+							"value": "",
+							"description": "رله 1 0 خاموش - 1 روشن",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "rel2",
+							"value": "",
+							"description": "رله 2 0 خاموش - 1 روشن",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "rel3",
+							"value": "",
+							"description": "رله 3 0 خاموش - 1 روشن",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "rel4",
+							"value": "",
+							"description": "رله 4 0 خاموش - 1 روشن",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "power_user",
+							"value": "",
+							"description": "خاموش روشن کردن کلی دستگاه برای کاربر",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "power_shopper",
+							"value": "",
+							"description": "خاموش روشن کردن کلی دستگاه برای فروشنده",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "p",
+							"value": "",
+							"description": "متغیر پی",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "time_in_comp",
+							"value": "",
+							"description": "زمان ورودی کمپرسور",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "flow_switch",
+							"value": "",
+							"description": "فلو سوئیچ",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "temp_calibrate",
+							"value": "",
+							"description": "کالیبره کردن دو سنسور",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "water_err",
+							"value": "",
+							"description": "عدم گردش آب",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "sim_err",
+							"value": "",
+							"description": "خطا شارژ سیم کارت",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "min_set_temp",
+							"value": "",
+							"description": "حداقل دمای تنظیمی",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "max_set_temp",
+							"value": "",
+							"description": "حداکثر دمای تنظیمی",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "min_time_off_comp",
+							"value": "",
+							"description": "حداقل زمان خاموش شدن کمپرسور",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "min_time_on_comp",
+							"value": "",
+							"description": "حداقل زمان روشن شدن کمپرسور",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "max_value_temp_alarm",
+							"value": "",
+							"description": "بیشینه مقدار دما برای آلارم",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "min_value_temp_alarm",
+							"value": "",
+							"description": "کمینه مقدار دما برای آلارم",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_updated",
+							"value": "",
+							"description": "کاربر اطلاعات بروز شده دارد",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "device_updated",
+							"value": "",
+							"description": "دستگاه اطلاعات بروز شده دارد",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_updated_time",
+							"value": "",
+							"description": "اطلاعات کاربر در این زمان بروز شده است",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "device_updated_time",
+							"value": "",
+							"description": "اطلاعات دستگاه در این زمان بروز شده است",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{server}}/api/device/update-settings",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"device",
+						"update-settings"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "4a34c7c1-be08-43b0-97c9-3d643ad2d37d",
+			"key": "localhost",
+			"value": "http://127.0.0.1:8000"
+		},
+		{
+			"id": "389f6779-15b1-4a3c-ba8d-9f6a45d04e1d",
+			"key": "server",
+			"value": "https://cristalhvac.ir"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
